@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CvComponent } from './header/cv/cv.component';
+import {HeaderComponent} from './header/cv/ui/header/header.component';
+import {CvInfoComponent} from './header/cv/ui/cv-info/cv-info.component';
+import {CvExperienceComponent} from './header/cv/ui/cv-experience/cv-experience.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CvComponent,
+    HeaderComponent,
+    CvInfoComponent,
+    CvExperienceComponent
   ],
   imports: [
     BrowserModule,

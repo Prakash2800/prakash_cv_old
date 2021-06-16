@@ -1,0 +1,59 @@
+.header {
+  margin: 40px 0;
+  display: flex;
+  font-family: $font-primary-regular;
+  color: $secondary-color;
+
+  &__abbr {
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 3px;
+  }
+
+  &__circle {
+    border: 1px solid $primary-color;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &__name {
+    width: 75%;
+
+    &-title {
+      color: $primary-color;
+      font-size: 45px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    margin-left: 20px;
+
+    p {
+      display: flex;
+      span {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        margin-right: 10px;
+      }
+      i {
+        color: $primary-color;
+      }
+
+      &:first-child {
+        padding-bottom: 5px;
+      }
+    }
+
+    &-left {
+      margin-right: 40px;
+    }
+  }
+}

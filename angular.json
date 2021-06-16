@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "prakash-cv"
+  "defaultProject": "prakash-cv",
+  "cli": {
+    "analytics": false
+  }
 }
