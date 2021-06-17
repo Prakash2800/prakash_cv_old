@@ -1,0 +1,23 @@
+/*
+Meant for font-face declaration
+*/
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto/Roboto-Regular/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('/assets/fonts/Roboto/Roboto-Medium/Roboto-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Heavy';
+  src: url('/fonts/Roboto/Roboto-Bold/Roboto-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

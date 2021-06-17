@@ -1,0 +1,15 @@
+.cv-container {
+  max-width: 960px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgb(88 88 95 / 12%);
+  background-color: #fff;
+  border: 1px solid #e8ecf0;
+
+  .cv-title {
+    text-align: center;
+    margin: 25px 0;
+    text-transform: uppercase;
+    font-family: $font-primary-medium;
+    color: $primary-color;
+  }
+}

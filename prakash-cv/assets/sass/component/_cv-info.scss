@@ -1,0 +1,56 @@
+.cv-info {
+  display: flex;
+  font-family: $font-primary-regular;
+  color: $secondary-color;
+  &__left-panel {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    border-right: 1px dashed rgba($secondary-color, 0.5);
+    position: relative;
+    padding-bottom: 30px;
+
+    &-title {
+      font-family: $font-primary-medium;
+      margin-right: 20px;
+      color: $primary-color;
+      text-align: right;
+    }
+
+    &-circle {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 0px;
+      right: -8px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      border: 1px solid rgba($secondary-color, 0.5);
+    }
+  }
+
+  &__details {
+    width: 75%;
+    padding-right: 75px;
+    padding-bottom: 30px;
+
+    &-info {
+      //font-size: 14px;
+      margin-left: 20px;
+
+      ul {
+        li {
+          display: flex;
+          margin-bottom: 2px;
+          span {
+            padding-right: 10px;
+            i {
+              color: rgba($secondary-color, 0.8);
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
