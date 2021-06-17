@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CvComponent } from './cv/cv.component';
 import {HeaderComponent} from './cv/ui/header/header.component';
 import {CvInfoComponent} from './cv/ui/cv-info/cv-info.component';
-import {CvExperienceComponent} from './cv/ui/cv-experience/cv-experience.component';
+import {CvTimelineComponent} from './cv/ui/cv-experience/cv-timeline.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import {CvExperienceComponent} from './cv/ui/cv-experience/cv-experience.compone
     CvComponent,
     HeaderComponent,
     CvInfoComponent,
-    CvExperienceComponent
+    CvTimelineComponent
   ],
   imports: [
     BrowserModule,
