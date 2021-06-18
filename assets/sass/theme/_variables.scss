@@ -7,3 +7,13 @@ $tertiary-color: #111111;
 $font-primary-regular: 'Roboto', sans-serif;
 $font-primary-medium: 'Roboto Medium', sans-serif;
 $font-primary-bold: 'Roboto Heavy', sans-serif;
+
+//Media Query Points
+$breakpoint-tablet: 992px;
+$breakpoint-mobile: 480px;
+$mobile-only: 'only screen and (max-width: #{$breakpoint-mobile})';
+$tablet-and-mobile: 'only screen and (max-width: #{$breakpoint-tablet})';
+
+//@media #{$mobile-only} {
+//  color: red;
+//}

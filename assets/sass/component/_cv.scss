@@ -5,11 +5,20 @@
   background-color: #fff;
   border: 1px solid #e8ecf0;
 
+  @media #{$mobile-only} {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .cv-title {
     text-align: center;
     margin: 25px 0;
     text-transform: uppercase;
     font-family: $font-primary-medium;
     color: $primary-color;
+
+    @media #{$mobile-only} {
+      margin-top: 0px;
+    }
   }
 }

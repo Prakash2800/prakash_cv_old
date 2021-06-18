@@ -4,12 +4,24 @@
   font-family: $font-primary-regular;
   color: $secondary-color;
 
+  @media #{$mobile-only} {
+    display: block;
+    margin-bottom: 25px;
+  }
+
   &__abbr {
     width: 25%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     margin-top: 3px;
+
+    @media #{$mobile-only} {
+      width: 100%;
+      justify-content: center;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
   }
 
   &__circle {
@@ -18,22 +30,41 @@
     font-size: 40px;
     border-radius: 50%;
     margin-right: 20px;
+
+    @media #{$mobile-only} {
+      margin-right: 0px;
+    }
   }
 
   &__name {
     width: 75%;
+
+    @media #{$mobile-only} {
+      width: 100%;
+    }
 
     &-title {
       color: $primary-color;
       font-size: 45px;
       margin-bottom: 10px;
       margin-left: 20px;
+
+      @media #{$mobile-only} {
+        margin-left: 30px;
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
     }
   }
 
   &__details {
     display: flex;
     margin-left: 20px;
+
+    @media #{$mobile-only} {
+      display: block;
+      margin-left: 30px;
+    }
 
     p {
       display: flex;
@@ -47,9 +78,10 @@
         color: $primary-color;
       }
 
-      &:first-child {
+      @media #{$mobile-only} {
         padding-bottom: 5px;
       }
+
     }
 
     &-left {

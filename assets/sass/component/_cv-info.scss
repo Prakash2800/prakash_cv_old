@@ -2,6 +2,11 @@
   display: flex;
   font-family: $font-primary-regular;
   color: $secondary-color;
+
+  @media #{$mobile-only} {
+    display: block;
+  }
+
   &__left-panel {
     width: 25%;
     display: flex;
@@ -10,11 +15,26 @@
     position: relative;
     padding-bottom: 30px;
 
+    @media #{$mobile-only} {
+      width: 100%;
+      justify-content: flex-start;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      border-right: none;
+    }
+
     &-title {
       font-family: $font-primary-medium;
       margin-right: 20px;
       color: $primary-color;
       text-align: right;
+
+      @media #{$mobile-only} {
+        br {
+          display: none;
+        }
+      }
+
     }
 
     &-circle {
@@ -26,6 +46,10 @@
       border-radius: 50%;
       background-color: #ffffff;
       border: 1px solid rgba($secondary-color, 0.5);
+
+      @media #{$mobile-only} {
+        display: none;
+      }
     }
   }
 
@@ -34,9 +58,18 @@
     padding-right: 75px;
     padding-bottom: 30px;
 
+    @media #{$mobile-only} {
+      width: 100%;
+      padding-right: 25px;
+    }
+
     &-info {
-      //font-size: 14px;
       margin-left: 20px;
+
+      @media #{$mobile-only} {
+        margin-left: 30px;
+      }
+
 
       ul {
         li {
